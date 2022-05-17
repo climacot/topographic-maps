@@ -1,9 +1,8 @@
-/**
- * @format
- */
+import { enableLatestRenderer } from 'react-native-maps'
+import { AppRegistry } from 'react-native'
+import { name as appName } from './app.json'
+import App from './App'
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+enableLatestRenderer()
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => App)
